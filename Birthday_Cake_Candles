@@ -1,0 +1,16 @@
+public static int birthdayCakeCandles(List<Integer> candles) {
+    // Write your code here
+    int count=0;
+        // for(int i =0; i<candles.size();i++)
+        // {
+           int num = Collections.max(candles);
+        // }
+        for(int j=0;j<candles.size();j++)
+        {
+            if(candles.get(j)==num)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
