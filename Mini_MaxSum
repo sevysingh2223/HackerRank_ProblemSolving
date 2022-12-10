@@ -1,0 +1,18 @@
+public static void miniMaxSum(List<Integer> arr) {
+    // Write your code here
+    List <Long> result=new ArrayList<Long>();
+    for(int i=0;i<arr.size();i++)
+    {   long sum=0;
+        for(int j=0;j<arr.size();j++)
+        {
+            if(i!=j)
+            {
+              sum =sum+arr.get(j);  
+            }
+        }
+        result.add(sum);
+    }
+    System.out.print(Collections.min(result) + " ");
+    System.out.print(Collections.max(result));
+
+    }
