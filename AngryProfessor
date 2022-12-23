@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Angry {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+		System.out.println("Enter number of students must required");
+		int k= scan.nextInt();
+		System.out.println("Enter Number Of Student");
+		int N=scan.nextInt();
+		
+		for(int i=0; i<N; i++){
+			int numofstudents=0;
+            
+            System.out.println("Enter Threshhold Attendee");
+			int K=scan.nextInt();
+			for(int j=0;j<=N; j++){
+				int a= scan.nextInt();
+				if( a<=0) numofstudents++;
+			}
+			if(numofstudents < K) System.out.println("YES");
+			else System.out.println("NO");
+    }
+}
+
+    
+}
